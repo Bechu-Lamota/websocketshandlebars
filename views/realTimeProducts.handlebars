@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Agrega cualquier referencia a bibliotecas de JavaScript que necesites, como Socket.IO -->
+</head>
+<body>
+    <h1>Productos en Tiempo Real</h1>
+    <ul id="product-list">
+        <!-- Aquí se mostrarán los productos en tiempo real -->
+    </ul>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        // Conectarse al servidor WebSocket
+        const socket = io();
+
+        socket.emit('mi_mensaje', 'Primer mensaje enviado desde el cliente') Establezco un mensaje del cliente
+        // Escuchar eventos WebSocket para recibir actualizaciones de productos
+        socket.on('nuevoProducto', (data) => {
+            const product = JSON.parse(data);
+            // Actualizar la lista de productos en la interfaz de usuario
+            const productList = document.getElementById('product-list');
+            const listItem = document.createElement('li');
+            listItem.textContent = `ID: ${product.id}, Nombre: ${product.nombre}, Precio: ${product.precio}`;
+            productList.appendChild(listItem);
+        });
+    </script>
+</body>
+</html>
+
+<script src="../public/js/realTimeProducts.js"></script>
