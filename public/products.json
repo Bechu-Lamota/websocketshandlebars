@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "title": "Salmon",
+      "description": "Este es un producto prueba",
+      "price": 12000,
+      "thumbnail": "Sin imagen",
+      "code": "abc123",
+      "stock": 25
+    },
+    {
+      "id": 2,
+      "title": "Huevos",
+      "description": "Este es un producto prueba2",
+      "price": 2800,
+      "thumbnail": "Sin imagen",
+      "code": "abc<zz",
+      "stock": 30
+    },
+    {
+      "id": 3,
+      "title": "Jalá",
+      "description": "Este es un producto prueba3",
+      "price": 300,
+      "thumbnail": "Sin imagen",
+      "code": "añid<zz",
+      "stock": 30
+    },
+    {
+      "id": 4,
+      "title": "Mamul",
+      "description": "Este es un producto prueba4",
+      "price": 200,
+      "thumbnail": "Sin imagen",
+      "code": "ñlsadjw",
+      "stock": 30
+    }
+  ]
